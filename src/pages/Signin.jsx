@@ -20,22 +20,22 @@ function Signin() {
   }
 
   if (loading) {
-    return <h2>Loading...</h2>; // ✅ Show loading state
+    return <h2>Loading...</h2>;
   }
 
   if (error) {
-    return <h2>Error: {error.message}</h2>; // ✅ Show error if any
+    return <h2>Error: {error.message}</h2>;
   }
 
   if (user) {
-    return <h2>Welcome, {user.displayName}!</h2>; // ✅ Show user info if signed in
+    return <h2>Welcome, {user.displayName}!</h2>;
   }
 
   return (
     <>
       <h1 className="title">Sign in</h1>
-      <div className="sign-in-field">
-        <button className="sign-in-button" onClick={signInWithGoogle}>
+      <div className="signin">
+        <button className="signin-with-google-button" onClick={signInWithGoogle}>
           Sign In With Google
         </button>
       </div>

@@ -11,7 +11,7 @@ img {
   height: 40px;
 }
 
-.sign-in-button {
+.signin-with-google-button {
   display: flex;
   align-items: center;  /* Align text and image in the center */
   gap: 10px;  /* Add space between text and logo */
@@ -27,11 +27,11 @@ img {
   margin-top: -80px;
 }
 
-.sign-in-button:hover {
+.signin-with-google-button:hover {
   background-color: rgb(251, 215, 147);
 }
 
-.sign-in-field {
+.signin {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,4 +57,24 @@ img {
     font-size: 100px;
     font-family: 'Ubuntu';
     margin: 20px;
+}
+
+.loading {
+    text-align: center;
+    font-family: 'Ubuntu';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  }
+
+.todo-field {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.todo-input {
+  width: 200px;
+  height: 40px;
+  text-align: center;
 }
